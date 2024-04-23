@@ -1,0 +1,122 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+nav{
+    background-color:rgb(83, 34, 83);
+    color: black;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    padding: 0px 15px;
+    font-family: "Roboto Mono", monospace;
+
+}
+
+nav ul{
+    list-style: none;
+}
+
+.gamecontainer{
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    position: relative;
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    background-color: rgb(228, 197, 156);
+}
+
+.gameinfo{
+    padding: 0px 30px;
+    font-family: "Madimi One", sans-serif;
+
+}
+
+.gameinfo h1{
+    font-size:2.5rem;
+}
+
+.imgbox img{
+    width: 0px;
+    transition: width 1s ease-in-out;
+}
+
+.bt-0{
+    border-top: 0px;
+}
+
+.bl-0{
+    border-left: 0px;
+}
+
+.br-0{
+    border-right: 0px;
+}
+
+.bb-0{
+    border-bottom: 0px;
+}
+
+#reset{
+    margin: 0px 23px ;
+    padding:6px 14px ;
+    background-color: rgb(182, 173, 198) ;
+    color: rgb(10, 9, 9);
+    border-radius: 6px ;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.line{
+    background-color: black;
+    height: 2px;
+    width: 0;
+    position: absolute;
+    left: 0px;
+    background-color: blueviolet;
+    transition: width 1s ease-in-out;
+}
+
+.info{
+    font-size: 25px;
+}
+
+@media screen and (max-width: 1000px)
+ {
+    .gamecontainer{
+        flex-wrap : wrap;
+    }
+    .gameinfo{
+        margin-top:35px;
+    }
+    .gameinfo h1{
+        font-size:1.5rem;
+    }
+    .cotainer{
+        grid-template-rows:repeat(3,20vw);
+        grid-template-columns:repeat(3,20vw);
+    }
+
+  }
+ 
